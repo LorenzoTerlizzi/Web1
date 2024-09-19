@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script>
+        function invioForm(){
+            document.getElementById("frm")
+        }
+    </script>
+</head>
+<body style="background-color: bisque;">
+    <h1>Forms</h1>
+    <form style="background-color: rgb(141, 118, 55);" action="">
+        <fieldset>
+            <legend>Inserire i dati</legend>
+        <label for="txtUsername">Inserire Username:</label><br>
+        <input type="text" id="txtUsername" name="username" placeholder="Inserisci l'username"> <br> <br>
+        <input type="radio" name="linguaggio" value="javascript"> Javascript
+        <input type="radio" name="linguaggio" value="css"> Css
+        <input type="radio" name="linguaggio" value="html"> Html
+        </fieldset>
+
+        <table>
+            <tr>
+                <td><label for="js">Html</label><br></td>
+                <td><input id="js" type="radio" name="linguaggio" value="html"></td>
+            </tr>
+            <tr>
+                <td><label for="js">Css</label><br></td>
+                <td><input id="js" type="radio" name="linguaggio" value="css"></td>
+            </tr>
+            <tr>
+                <td><label for="js">Javascript</label><br></td>
+                <td><input id="js" type="radio" name="linguaggio" value="javascript"></td>
+            </tr>
+
+        </table><br>
+        <!-- Modo alternativo utilizzando i label: -->
+        <br>
+        <hr style="color: aliceblue;">
+        <br>
+
+        <!-- <input id="js" type="radio" name="linguaggio" value="html">
+        <label for="js">Html</label><br>
+        <input id="js" type="radio" name="linguaggio" value="css">
+        <label for="js">Css</label><br>
+        <input id="js" type="radio" name="linguaggio" value="javascript">
+        <label for="js">Javascript</label><br> -->
+
+        <br>
+        <hr style="color: aliceblue;">
+        <br>
+
+        <label for="chkCondizioni">Accetta le condizioni di utilizzo</label>
+        <input type="checkbox" id="chkCondizioni">
+        
+        <br>
+        <br>
+        <hr style="color: aliceblue;">
+        <br>
+        <!-- Utilizzare input o button per un tasto invia è uguale -->
+        <input type="submit" value="Invia">
+        <br>
+        <button type="submit">Invia</button>
+        
+        <br>
+        <br>
+        <hr style="color: aliceblue;">
+        <br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password">
+        <button type="submit">Invia</button>
+        <button type="reset">Reset</button>
+
+        <br>
+        <br>
+        <hr style="color: aliceblue;">
+        <br>
+        <input type="button" onclick="alert('GelloWorld!')" value="Cliccami!">
+
+        <br>
+        <br>
+        <hr style="color: aliceblue;">
+        <br>
+        <label for="birthday">Data di Nascita</label>
+        <input type="date" id="birthday" name="birthaday">
+        <br>
+        <label for="dataprenotazione">Data prenotazione</label>
+        <input type="datetime-local" id="dataprenotazione" name="dataprenotazione">
+
+        <br>
+        <br>
+        <hr style="color: aliceblue;">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <br>
+        <br>
+        <hr style="color: aliceblue;">
+        <br>
+        <select name="modello" id="">
+            <option value="" selected>Seleziona una marca</option>
+            <option value="bmw">BMW</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+        
+        <br>
+        <br>
+        <hr style="color: aliceblue;">
+        <br>
+        <label for="commento">Commento</label>
+        <textarea name="commento" id="commento" cols="30" row="40"></textarea>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <label for="telefono">Telefono:</label>
+        <input type="tel" id="telefono" name="telefono"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <button type="submit">Invia</button>
+
+        <br>
+        <br>
+        <hr style="color: aliceblue;">
+        <br>
+        <label for="myfile">Seleziona file:</label>
+        <input type="file" id="myfile" name="myfile">
+        <button type="submit">Invia</button>
+
+        <br>
+        <br>
+        <hr style="color: aliceblue;">
+        <br>
+        <label for="qta">Quantit&aacute;</label>
+        <input style="width: 50%" type="number" id="qta" name="qta" min="0" max="10"
+        placeholder="Inserisci la quantità" step="2">
+        <button type="submit">Invia</button>
+
+
+    </form>
+</body>
+</html>

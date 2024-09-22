@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Esercizio Form</h1>
+    <form>
+        <label for="name">Nome:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="lname">Cognome:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <label for="email">Indirizzo Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="subject">Oggetto:</label><br>
+        <input type="text" id="subject" name="subject"><br><br>
+        
+
+        <select name="linguaggio" id="">
+            <option value="" selected>Seleziona il linguaggio</option>
+            <option value="java">Java</option>
+            <option value="javascript">Javascript</option>
+            <option value="c">C#</option>
+            <option value="python">Python</option>
+            <option value="go">Go</option>
+        </select>
+        <br>
+        <br>
+
+        <label>Sesso:</label><br>
+        
+        <input type="radio" id="maschio" name="sesso" value="maschio">
+        <label for="maschio">Maschio</label><br>
+        <input type="radio" id="femmina" name="sesso" value="femmina">
+        <label for="femmina">Femmina</label>
+        <br><br>
+
+        <label for="eta">Età:</label><br>
+        <input type="number" id="eta" name="eta"><br><br>
+
+
+        <br>
+        <label for="descrizione">Descrizione</label>
+        <textarea name="descrizione" id="descrizione" cols="30" row="40"></textarea>
+        <br>
+        <br>
+    
+        <input type="checkbox" id="chkPolicy" name="chkPolicy">
+        <label for="chkPolicy">
+            Ho letto e accetto la <a href="privacy.html" target="_blank">Privacy Policy</a>
+        </label><br><br>
+
+        <button type="submit">Invia</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

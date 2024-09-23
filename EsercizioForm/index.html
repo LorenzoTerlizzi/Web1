@@ -8,18 +8,20 @@
 <body>
     <h1>Esercizio Form</h1>
     <form>
+        <div style="border: solid 1px black; background-color: rgba(231, 166, 25, 0.329); display:flexbox">
         <label for="name">Nome:</label><br>
-        <input type="text" id="name" name="name"><br><br>
+        <input type="text" id="name" name="name" min="0" max="10"><br><br>
         <label for="lname">Cognome:</label><br>
-        <input type="text" id="lname" name="lname"><br><br>
+        <input type="text" id="lname" name="lname" min="0" max="10"><br><br>
 
         <label for="email">Indirizzo Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
-
+        <input type="email" id="email" name="email" min="0" max="10"><br><br>
+        </div>
+        <div style="border: solid 1px black; background-color: rgb(219, 185, 111); display:flexbox">
         <label for="subject">Oggetto:</label><br>
-        <input type="text" id="subject" name="subject"><br><br>
+        <input type="text" id="subject" name="subject" min="0" max="10"><br><br>
         
-
+        <label for="linguaggio"> Seleziona il tuo linguaggio preferito:</label>
         <select name="linguaggio" id="">
             <option value="" selected>Seleziona il linguaggio</option>
             <option value="java">Java</option>
@@ -40,11 +42,11 @@
         <br><br>
 
         <label for="eta">Età:</label><br>
-        <input type="number" id="eta" name="eta"><br><br>
+        <input type="number" id="eta" name="eta" min="0" max="150"><br><br>
 
 
         <br>
-        <label for="descrizione">Descrizione</label>
+        <label for="descrizione">Descrizione</label><br>
         <textarea name="descrizione" id="descrizione" cols="30" row="40"></textarea>
         <br>
         <br>
@@ -53,7 +55,7 @@
         <label for="chkPolicy">
             Ho letto e accetto la <a href="privacy.html" target="_blank">Privacy Policy</a>
         </label><br><br>
-
+        </div>
         <button type="submit">Invia</button>
         <button type="reset">Reset</button>
     </form>

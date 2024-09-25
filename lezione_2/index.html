@@ -1,93 +1,67 @@
 <!DOCTYPE html>
-<html>
-<head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelle</title>
-    <style>
-        table{
-            border: 1px solid black;
-            width: 100%;
-        }
-        tr:nth-child(even){
-            background-color: #77a5a5;
-        }
-        th{
-            background-color: brown;
-            font-size: 24px;
-            color: white;
-            /* text-align: right; */
-        }
+<html >
 
-        tr:hover{
-            background-color: lightgray;
-        }
-    </style>
-</head>
-<body>
-    
-    <table id="table1">
-        <tr>
-            <th>Intestazione 1</th>
-            <th>Intestazione 2</th>
-            <th>Intestazione 3</th>
-        </tr>
-        <tr>
-            <td id="p1_1">
-                Prima cella
-            </td>
-            <td>
-                Seconda cella
-            </td>
-            <td>
-                Terza cella
-            </td>
-        </tr>
+<body style = "background-color:rgb(235, 203, 161)">
+    <h1 style = "color:peru; font-size: 200%">Titolo </h1>
+    <h2>Titolo 2</h2>
+    <h3>Titolo 3</h3>
+    <h4>Titolo 4</h4>
+    <h5>Titolo 5</h5>
 
-        <tr>
-            
-            <td colspan="2">2_1</td>
-            <!-- <td>2_2</td> -->
-            <td>2_3</td>
-            
-        </tr>
-        <tr>
-            <td rowspan="2" colspan="2">3_1</td>
-            <!-- <td>3_2</td> -->
-            <td>3_3</td>
-        </tr>
-        <tr>
-            <!-- <td>4_1</td> -->
-            <!-- <td>4_2</td> -->
-            <td>4_3</td>
-        </tr>
-    </table>
-    <br>
-    <h1>Lista della spesa</h1>
-    <ul>
-        <li>Pane</li>
-        <li>Latte</li>
-        <li>Pasta</li>
-        <li>Pesche</li>
-    </ul>
-    <br>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/B9p6CGgVIsU?si=RsQLDqK3f0Dt1-aq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <p>Lorem ipsum, <spam style="background-color: aqua;">dolor sit</spam> dolor sit amet consectetur adipisicing elit. Blanditiis eligendi, rem molestiae voluptatibus inventore nisi, sequi neque, officiis deleniti voluptates consequatur alias? Similique delectus quos exercitationem quas dicta cum explicabo!</p>
-    <br>
+    <p>Paragrafo</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> 
+        <small>Aliquid dignissimos eveniet vel assumenda earum explicabo dolorum velit neque, aut beatae incidunt est. </small>
+        Numquam ipsum porro, in voluptatibus omnis id fuga?
+    </p>
     <hr>
-    <h1>Pasta al Pomodoro</h1>
-    <ol style="list-style-type:lower-greek;">
-        <li>
-            Metti l' acqua nella pentola
-            <ul style="list-style-type: square;">
-                <li>Acqua</li>
-                <li>Pentola</li>
-            </ul>
-        </li>
-        <li>Metti la pentola sul fuoco</li>
-        <li>Aspetta che l'acqua bolle</li>
-    </ol>
+    <p>Ecco una citazione dal sito del WWF:</p>
+    <blockquote cite = "http://www.worldwildelife.org/who/index.html" style = "color:darkred">
+        Marte è il quarto pianeta del sistema solare in ordine di distanza dal Sole;[4] 
+        è visibile a occhio nudo ed è l'ultimo dei pianeti di tipo terrestre dopo Mercurio, 
+        Venere e la Terra (1,52 UA di distanza dal sole). Chiamato pianeta rosso per via del suo colore caratteristico causato dalla grande quantità di ossido di ferro che lo ricopre,[4]
+        Marte prende il nome dall'omonima divinità della mitologia romana[4] e il suo simbolo astronomico è la rappresentazione stilizzata dello scudo e della lancia del dio (; Unicode: ♂). 
+    </blockquote>
 
+    <a href="about.html">Vai alla pagina About</a>
+    
+    <hr>
+    <p>L'<abbr title = "HypreText Markuo Language"> HTML</abbr> serve per creare siti web.</p>
+    <hr>
+
+    <address>
+        Alberto Bellamo Bullo <br>
+        Accademia Informatica<br>
+        Via Tommaso Marinetti<br>
+    </address>
+
+    <hr>
+    <p>
+        <i>
+            Alberto Bellamo Bullo<br>
+            Accademia Informatica<br>
+            Via Tommaso Marinetti<br>
+        </i>
+    </p>
+    <!--commento-->
+    <hr>
+
+
+
+    <strong>Questo è uno strong</strong>
+    <pre>
+        Primo 
+        Secondo 
+        Terzo
+    </pre>
+
+
+    <br>
+    <hr> 
+    <br>
+    
+    <img src = "images/immagine.jpeg" 
+        width = "600" 
+        length = "700" alt = "Descrizione immagine">
+    
 </body>
 </html>
